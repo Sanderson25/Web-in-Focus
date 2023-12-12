@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <met name="viewport" content="width=device-width,initial-scale=0.25">
+		<title>Tags HTML</title>
+		<link rel="stylesheet" href="reset.css">
+        <link rel="icon" href="logo-removebg-preview.png" type="image/x-icon">
+        <style>
+	       #id2 {
+            width: 900px;
+            margin: 0 0 0 200px;
+           }
+            .cabeçalho {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                padding: 0 20px;
+            }
+            #pheader {
+                font-size: 10em;
+                font-family: Arial;
+            }
+            #menu {
+                width: 100%;
+                align-items: center;
+                 background-position: center;
+                display: inline;
+                margin: 0 0 0 200px;
+            }
+            .botao {
+                display: none;
+            }
+            details {
+                color: #FFFFFF;
+            }
+            .lista_itens {
+                display:none;
+                position: absolute;
+                top: 100%;
+                width: 60%;
+                font-size: 200px;
+            }
+            .botao:checked~.lista_itens {
+                display: block;
+                background-color: black;
+                color: #FFFFFF;
+            }
+            .temas1 {
+                font-size: 100px;
+                padding: 0 0 0 200px;
+            }
+            a {
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+            a:hover {
+                color: blue;
+                font-size: 150px;
+                text-decoration: underline;
+            }
+            .rodape {
+                display: flex;
+                justify-content: space-evenly;
+                font-size: 850%;
+                margin: 0px 0px 200px 0px;
+            }
+            #imgrodape {
+                
+            }
+            main {
+                background-color: #5399E1;
+                text-align: center;
+                justify-content: ;
+                font-size: 200px;
+                padding: 500px 0 500px 0;
+            }
+            footer {
+                padding: 200px 0px;
+            }
+            #teste {
+                padding: 0px 2000px;
+            }
+            #img11 {
+                width: 50%;
+                height: 10%
+            }
+            #img3 {
+                width: 50%;
+                height: 10%;
+            }
+		</style>
+	</head>
+	<body>
+		<header class="cabeçalho">
+        <div class="container">
+            <label for="botao1">
+                <img src="Menu.svg" id="menu">
+            </label>
+            <input type="checkbox" id="botao1" class="botao">
+            <ul class="lista_itens">
+            <li>
+                <details>
+                    <summary>HTML</summary>
+                    <p class="texto">
+                        <ul class="temas1">
+                            <a href="../html/Untitled-1.html"><li>O que é HTML</li></a>
+                            <a href="../html/tela2.html"><li>Estrutura basica do HTML</li></a>
+                            <a href="../html/tela3.html"><li>Tags HTML</li></a>
+                            <a href="../html/tela3.html"><li>Como criar uma pagina HTML</li></a>
+                            <a href="../html/tela3.html"><li>Tag head</li></a>
+                            <a href="../html/tela3.html"><li>Tag body</li></a>
+                            <a href="../html/tela3.html"><li>Títulos</li></a>
+                            <a href="../html/tela3.html"><li>Parágrafos</li></a>
+                            <a href="../html/tela3.html"><li>Tag br</li></a>
+                            <a href="../html/questoeshtml.html"><li>Questões HTML</li></a>
+                             <!--<a href=""><li>Formatação Básica</li></a>
+                            <a href=""><li>Links e Imagens</li></a>
+                            <a href=""><li>Listas</li></a>
+                            <a href=""><li>Tabelas</li></a>
+                            <a href=""><li>Formulários</li></a>
+                            <a href=""><li>HTml semântico</li></a>-->
+
+
+                        </ul>
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>CSS</summary>
+                    <p class="texto">
+                        <ul class="temas1">
+                            <a href="../css/tela1css.html"><li>O que é CSS</li></a>
+                            <a href="../css/tela2css.html"><li>Estrutura CSS</li></a>
+                            <a href="../css/tela3css.html"><li>Tags CSS</li></a>
+                            <a href="../css/questoescss.html"><li>Questões CSS</li></a>
+                        </ul>
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>JavaScript</summary>
+                    <p class="texto">
+                        <ul class="temas1">
+                            <a href="../js/tela1js.html"><li>O que é JavaScript</li></a>
+                            <a href="../js/tela2js.html"><li>Variáveis</li></a>
+                             <!--<a href=""><li>Constantes</li></a>-->
+                            <a href="../js/tela2js.htmls"><li>Impressão</li></a>
+                            <a href="../js/tela3js.html"><li>Condicionais simples e alinhadas</li></a>
+                            <a href="../js/questoesjs.html"><li>Quesões JavaScript</li></a>
+                          
+                        </ul>
+                    </p>
+                </details>
+            </li>
+        </ul>
+        </div>
+        <div class="container">
+           <p id="pheader">Web in Focus</p>
+        </div>
+        <div class="container">
+           <img src="logo.png" alt="Logo do Site" id="id2">
+        </div>
+    </header>
+		<main>
+            <p>HTML</p>
+            <p>Tags HTML</p>
+            <p>TAG &ltHEAD&gt: a tag “&lthead>” é Início do “cabeçalho”, em que ficam os parâmetros de configuração de um documento. já a tag “&lt/head>” já é o final do cabeçalho. <br>
+                A algumas tags que podem ser colocadas no cabeçalho como a tag “&lttitle>” que é o título que irá aparecer na página HTML.<br>
+                
+                 Outra importante tag de configuração que fica dentro de &lthead> é a tag &ltmeta> com o parâmetro charset que indica qual a tabela de caracteres que deve ser utilizada na página.<br>
+                
+                 Neste caso, usamos o UTF-8 que é um padrão que pode
+                representar qualquer caractere padrão do Unicode (padrão que
+                permite aos computadores representar texto de qualquer
+                padrão de escrita existente)<br>
+                
+                Na tag &lthead>, também ficam as configurações de estilo da
+                página (cores, tipo de fonte, alinhamento, etc.)<br>
+                Além das configurações de estilo, nesta tag podemos inserir
+                comandos de linguagem JavaScript.<br>
+                Importante saber: tudo o que está na &lthead> será carregado
+                antes do conteúdo do &ltbody>.<br>
+                Um exemplo do uso dessas tags:<br>
+                
+                <br>
+               <img src="img1.png" id="img11"><br>
+                
+                
+                
+                TAG BODY, TÍTULOS, PULA LINHA E PARÁGRAFO: A tag “&ltbody>” é o início do corpo enquanto a tag “&lt/body>” é o final do corpo, A tag body apresentam tudo que é visto diretamente pelo usuário da página HTML, uma parte das tags do “corpo” são os títulos: <br>
+                &lth1>Título Maior&lt/h1><br>
+                &lth2>Título Menos Maior&lt/h2><br>
+                &lth3>Título Médio&lt/h3><br>
+                &lth4>Título Quase Menor&lt/h4><br>
+                &lth5>Título Menor&lt/h5><br>
+                &lth6>Título Menorzinho&lt/h6><br>
+                Parando por aí já que não existe h7 e h8, também existe a tag de parágrafo que apresenta “&ltp>” como o início do parágrafo e a tag ”&lt/p>” no final do parágrafo.<br>
+                Também existe a tag “&ltbr>” já falada acima que não possui fechamento que serve para pular linhas.<br>
+                Aproveitando o exemplo da tag head:<br>
+                
+                
+                
+                <br>
+               <img src="img3.png" id="img3"><br>
+                </p>
+        </main>
+		<footer>
+            <div class="rodape">
+            <p>Siga - nos</p>
+            <p>Desenvolvido por Web in Focus</p>
+            </div>
+            <div class="rodape">
+                <a href="https://instagram.com/web_in_focus?igshid=MzMyNGUyNmU2YQ=="> <img src="instagram.jpg" id="imgrodape"></a>
+                <p>copyright © 2023</p>
+                </div>
+        </footer>
+	</body>
+
+</html>

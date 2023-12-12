@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <met name="viewport" content="width=device-width,initial-scale=0.25">
+		<title>Condicionais Simples e Alinhadas</title>
+		<link rel="stylesheet" href="reset.css">
+        <link rel="icon" href="logo-removebg-preview.png" type="image/x-icon">
+        <style>
+	       #id2 {
+            width: 900px;
+            margin: 0 0 0 200px;
+           }
+            .cabeçalho {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                padding: 0 20px;
+            }
+            #pheader {
+                font-size: 10em;
+                font-family: Arial;
+            }
+            #menu {
+                width: 100%;
+                align-items: center;
+                 background-position: center;
+                display: inline;
+                margin: 0 0 0 200px;
+            }
+            .botao {
+                display: none;
+            }
+            details {
+                color: #FFFFFF;
+            }
+            .lista_itens {
+                display:none;
+                position: absolute;
+                top: 100%;
+                width: 60%;
+                font-size: 200px;
+            }
+            .botao:checked~.lista_itens {
+                display: block;
+                background-color: black;
+                color: #FFFFFF;
+            }
+            .temas1 {
+                font-size: 100px;
+                padding: 0 0 0 200px;
+            }
+            a {
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+            a:hover {
+                color: blue;
+                font-size: 150px;
+                text-decoration: underline;
+            }
+            .rodape {
+                display: flex;
+                justify-content: space-evenly;
+                font-size: 850%;
+                margin: 0px 0px 200px 0px;
+            }
+            #imgrodape {
+                
+            }
+            main {
+                background-color: #5399E1;
+                text-align: center;
+                justify-content: ;
+                font-size: 200px;
+                padding: 500px 0 500px 0;
+            }
+            footer {
+                padding: 200px 0px;
+            }
+            #teste {
+                padding: 0px 2000px;
+            }
+            #img1, #img2 {
+                width: 30%;
+            }
+		</style>
+	</head>
+	<body>
+		<header class="cabeçalho">
+        <div class="container">
+            <label for="botao1">
+                <img src="Menu.svg" id="menu">
+            </label>
+            <input type="checkbox" id="botao1" class="botao">
+            <ul class="lista_itens">
+            <li>
+                <details>
+                    <summary>HTML</summary>
+                    <p class="texto">
+                        <ul class="temas1">
+                            <a href="../html/Untitled-1.html"><li>O que é HTML</li></a>
+                            <a href="../html/tela2.html"><li>Estrutura basica do HTML</li></a>
+                            <a href="../html/tela3.html"><li>Tags HTML</li></a>
+                            <a href="../html/tela3.html"><li>Como criar uma pagina HTML</li></a>
+                            <a href="../html/tela3.html"><li>Tag head</li></a>
+                            <a href="../html/tela3.html"><li>Tag body</li></a>
+                            <a href="../html/tela3.html"><li>Títulos</li></a>
+                            <a href="../html/tela3.html"><li>Parágrafos</li></a>
+                            <a href="../html/tela3.html"><li>Tag br</li></a>
+                            <a href="../html/questoeshtml.html"><li>Questões HTML</li></a>
+                            <!--<a href=""><li>Formatação Básica</li></a>
+                            <a href=""><li>Links e Imagens</li></a>
+                            <a href=""><li>Listas</li></a>
+                            <a href=""><li>Tabelas</li></a>
+                            <a href=""><li>Formulários</li></a>
+                            <a href=""><li>HTml semântico</li></a>-->
+
+
+                        </ul>
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>CSS</summary>
+                    <p class="texto">
+                        <ul class="temas1">
+                            <a href="../css/tela1css.html"><li>O que é CSS</li></a>
+                            <a href="../css/tela2css.html"><li>Estrutura CSS</li></a>
+                            <a href="../css/tela3css.html"><li>Tags CSS</li></a>
+                            <a href="../css/questoescss.html"><li>Questões CSS</li></a>
+                        </ul>
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>JavaScript</summary>
+                    <p class="texto">
+                        <ul class="temas1">
+                            <a href="../js/tela1js.html"><li>O que é JavaScript</li></a>
+                            <a href="../js/tela2js.html"><li>Variáveis</li></a>
+                             <!--<a href=""><li>Constantes</li></a>-->
+                            <a href="../js/tela2js.html"><li>Impressão</li></a>
+                            <a href="../js/tela3js.html"><li>Condicionais simples e alinhadas</li></a>
+                            <a href="../js/questoesjs.html"><li>Quesões JavaScript</li></a>
+                            
+                        </ul>
+                    </p>
+                </details>
+            </li>
+        </ul>
+        </div>
+        <div class="container">
+           <p id="pheader">Web in Focus</p>
+        </div>
+        <div class="container">
+           <img src="logo.png" alt="Logo do Site" id="id2">
+        </div>
+    </header>
+		<main>
+            <p>JavaScript</p>
+            <p>Condicionais Simples e Alinhadas</p>
+            <p>
+                É uma estrutura condicional que executa a afirmação, dentro do
+bloco, se determinada condição for verdadeira. Se for falsa,
+
+executa as afirmações dentro de else. <br>
+
+Apresentaremos aqui como utilizar o método if/else. <br>
+<br>
+<img src="img003.png" id="img1"> <br>
+<br>
+Laço de Repetição for <br> 
+
+Um laço for é uma instrução de fluxo de controle que permite
+que o código seja executado repetidamente com base em uma
+determinada condição booleana. O laço for pode ser
+
+considerado uma instrução if repetida. <br> 
+<br>
+<img src="img004.png" id="img2"> <br>
+<br>
+            </p>
+        </main>
+		<footer>
+            <div class="rodape">
+            <p>Siga - nos</p>
+            <p>Desenvolvido por Web in Focus</p>
+            </div>
+            <div class="rodape">
+                <a href="https://instagram.com/web_in_focus?igshid=MzMyNGUyNmU2YQ=="> <img src="instagram.jpg" id="imgrodape"></a>
+                <p>copyright © 2023</p>
+                </div>
+        </footer>
+	</body>
+
+</html>

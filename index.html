@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Web in Focus</title>
+		<link rel="stylesheet" href="reset.css">
+        <link rel="icon" href="logo-removebg-preview.png" type="image/x-icon">
+        <style>
+	       #id2 {
+            width: 900px;
+            margin: 0 0 0 200px;
+           }
+            .cabecalho {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                padding: 0 20px;
+            }
+            #pheader {
+                font-size: 10em;
+                font-family: Arial;
+            }
+            #menu {
+                width: 100%;
+                background-position: center center;
+                display: block;
+                margin: 0 0 0 200px;
+            }
+            .botao {
+                display: none;
+            }
+            details {
+                color: #FFFFFF;
+            }
+            .lista_itens {
+                display:none;
+                position: absolute;
+                top: 100%;
+                width: 60%;
+                font-size: 200px;
+            }
+            .botao:checked~.lista_itens {
+                display: block;
+                background-color: black;
+                color: #FFFFFF;
+            }
+            .temas1 {
+                font-size: 100px;
+                padding: 0 0 0 200px;
+            }
+            a {
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+            a:hover {
+                color: blue;
+                font-size: 150px;
+                text-decoration: underline;
+            }
+            .rodape {
+                display: flex;
+                justify-content: space-evenly;
+                font-size: 850%;
+                margin: 0px 0px 200px 0px;
+            }
+            #imgrodape {
+                  background-color: #5399E1;
+    		  text-align: center;
+    		  font-size: 24px;
+    		  padding: 50px 0;
+            }
+            main {
+                background-color: #5399E1;
+                text-align: center; 
+                justify-content: space-evenly;
+                font-size: 200px;
+                padding: 500px 0 500px 0;
+            }
+            footer {
+                padding: 200px 0px;
+            }
+            #teste {
+                padding: 0px 2000px;
+            }
+		</style>
+	</head>
+	<body>
+		<header class="cabecalho">
+        <div class="container">
+            <label for="botao1">
+                <img src="Menu.svg" id="menu" alt="Menu">
+            </label>
+            <input type="checkbox" id="botao1" class="botao">
+            <ul class="lista_itens">
+            <li>
+                <details>
+                    <summary>HTML</summary>
+                    <p class="texto">
+                        <ul class="temas1">
+                            <li><a href="../webinfocus/html/Untitled-1.html">O que é HTML</a></li>
+                            <li><a href="../webinfocus/html/tela2.html">Estrutura basica do HTML</a></li>
+                            <li><a href="../webinfocus/html/tela3.html">Tags HTML</a></li>
+                            <li><a href="../webinfocus/html/tela3.html">Como criar uma pagina HTML</a></li>
+                            <li><a href="../webinfocus/html/tela3.html">Tag head</a></li>
+                            <li><a href="../webinfocus/html/tela3.html">Tag body</a></li>
+                            <li><a href="../webinfocus/html/tela3.html">Títulos</a></li>
+                            <li><a href="../webinfocus/html/tela3.html">Parágrafos</a></li>
+                            <li><a href="../webinfocus/html/tela3.html">Tag br</a></li>
+                            <li><a href="../webinfocus/html/questoeshtml.html">Questões HTML</a></li>
+                        </ul>
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>CSS</summary>
+                    <p class="texto">
+                        <ul class="temas1">
+                            <li><a href="../webinfocus/css/tela1css.html">O que é CSS</a></li>
+                            <li><a href="../webinfocus/css/tela2css.html">Estrutura CSS</a></li>
+                            <li><a href="../webinfocus/css/tela3css.html">Tags CSS</a></li>
+                            <li><a href="../css/questoescss.html">Questões CSS</a></li>
+                        </ul>
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>JavaScript</summary>
+                    <p class="texto">
+                        <ul class="temas1">
+                            <li><a href="../webinfocus/js/tela1js.html">O que é JavaScript</a></li>
+                            <li><a href="../webinfocus/js/tela2js.html">Variáveis</a></li>
+                            <li><a href="../webinfocus/js/tela2js.html">Impressão</a></li>
+                            <li><a href="../webinfocus/js/tela3js.html">Condicionais simples e alinhadas</a></li>
+                            <li><a href="../webinfocus/js/questoesjs.html">Questões JavaScript</a></li>
+                        </ul>
+                    </p>
+                </details>
+            </li>
+        </ul>
+        </div>
+        <div class="container">
+           <p id="pheader">Web in Focus</p>
+        </div>
+        <div class="container">
+           <img src="logo.png" alt="Logo do Site" id="id2">
+        </div>
+    </header>
+		<main>
+            <p id="teste">Web in Focus é uma página web que possui conteúdo simples de programação de web para o uso acadêmico e profissional criada com o intuito de ensinar programação web básica para programadores iniciantes ou pessoas com interesse na área. Web in Focus ensina o básico de HTML, CSS e a linguagem de programação JavaScript.</p>
+            
+        </main>
+		<footer>
+            <div class="rodape">
+            <p>Siga - nos</p>
+            <p>Desenvolvido por Web in Focus</p>
+            </div>
+            <div class="rodape">
+                <a href="https://instagram.com/web_in_focus?igshid=MzMyNGUyNmU2YQ=="> <img src="instagram.jpg" id="imgrodape" alt="Instagram"></a>
+                <p>copyright © 2023</p>
+                </div>
+        </footer>
+	</body>
+</html>
